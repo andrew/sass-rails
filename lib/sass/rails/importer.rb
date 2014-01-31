@@ -74,7 +74,7 @@ module Sass
           return unless full_filename && File.readable?(full_filename)
 
           context.depend_on full_filename
-          engine = Sass::Engine.new(evaluate(full_filename), options.merge(
+          engine = SassC::Engine.new(evaluate(full_filename), options.merge(
             syntax: syntax,
             filename: full_filename,
             importer: self
