@@ -61,7 +61,7 @@ module Sass
             contents << "@import #{Pathname.new(filename).relative_path_from(base_pathname.dirname).to_s.inspect};\n"
           end
           return nil if contents.empty?
-          Sass::Engine.new(contents, options.merge(
+          SassC::Engine.new(contents, options.merge(
             :filename => base_pathname.to_s,
             :importer => self,
             :syntax => :scss
