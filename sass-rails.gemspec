@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "sass/rails/version"
 
 Gem::Specification.new do |s|
-  s.name        = "sass-rails"
+  s.name        = "sassc-rails"
   s.version     = Sass::Rails::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["wycats", "chriseppstein"]
